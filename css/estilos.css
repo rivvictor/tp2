@@ -28,3 +28,14 @@ button {
 #resultado {
     font-weight: bold;
 }
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tarjeta-destacado {
+    cursor: pointer;
+    text-align: center;
+}
