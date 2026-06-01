@@ -39,3 +39,9 @@ button {
     cursor: pointer;
     text-align: center;
 }
+
+.seleccionada {
+    background-color: rgb(26, 229, 236);
+    border-color: rgb(18, 14, 235);
+    font-weight: bold;
+}
