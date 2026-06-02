@@ -4,6 +4,10 @@ const videojuegos = [
     { nombre: "Doom Eternal", categoria: "Accion" },
     { nombre: "Age of Empires 2", categoria: "Estrategia" },
     { nombre: "Counter Strike 2", categoria: "Accion" },
+    { nombre: "ARK Survival Evolved", categoria: "Survival" },
+    { nombre: "StarCraft II", categoria: "Estrategia" },
+    { nombre: "7 Days to Die", categoria: "Survival" },
+    { nombre: "Forza Horizon 6", categoria: "Carreras" },
     { nombre: "Need for Speed Heat", categoria: "Carreras" }
 ];
 
@@ -41,5 +45,35 @@ document.getElementById("btnAccion").addEventListener("click", () => {
     );
 
     mostrarJuegos(juegosAccion);
+
+});
+
+document.getElementById("btnSurvival").addEventListener("click", () => {
+
+    const juegosSurvival = videojuegos.filter(juego =>
+        juego.categoria === "Survival"
+    );
+
+    mostrarJuegos(juegosSurvival);
+
+});
+
+document.getElementById("btnEstrategia").addEventListener("click", () => {
+
+    const juegosEstrategia = videojuegos.filter(juego =>
+        juego.categoria === "Estrategia"
+    );
+
+    mostrarJuegos(juegosEstrategia);
+
+});
+
+document.getElementById("btnCarreras").addEventListener("click", () => {
+
+    const juegosCarreras = videojuegos.filter(juego =>
+        juego.categoria === "Carreras"
+    );
+
+    mostrarJuegos(juegosCarreras);
 
 });
